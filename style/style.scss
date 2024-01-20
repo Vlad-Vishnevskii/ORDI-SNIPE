@@ -103,6 +103,22 @@ img {
   background-position: center;
   padding-bottom: 180px;
 
+  @include vp-1439 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include vp-1023 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 80px;
+  }
+
   &_title {
     margin-top: 120px;
     color: #fff;
@@ -112,6 +128,19 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include vp-1439 {
+      font-size: 65px;
+    }
+
+    @include vp-1023 {
+      font-size: 55px;
+    }
+
+    @include vp-767 {
+      font-size: 40px;
+      margin-top: 70px;
+    }
   }
 
   &_description {
@@ -126,6 +155,20 @@ img {
     line-height: 75px;
     letter-spacing: 2.56px;
     text-transform: uppercase;
+
+    @include vp-1439 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+
+    @include vp-1023 {
+      font-size: 40px;
+    }
+
+    @include vp-767 {
+      margin-top: 70px;
+      font-size: 30px;
+    }
   }
 
   &_link {
@@ -144,6 +187,15 @@ img {
     line-height: normal;
     letter-spacing: -0.6px;
 
+    @include vp-1023 {
+      font-size: 26px;
+    }
+
+    @include vp-767 {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
     &:hover,
     &:focus {
       opacity: 0.6;
@@ -159,6 +211,14 @@ img {
     line-height: normal;
     font-variant: small-caps;
     letter-spacing: 0.6px;
+
+    @include vp-1023 {
+      font-size: 25px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+    }
   }
 }
 
@@ -170,6 +230,11 @@ img {
   padding: 0 60px;
   padding-bottom: 229px;
 
+  @include vp-767 {
+    padding: 0 16px;
+    padding-bottom: 120px;
+  }
+
   &_title {
     margin-top: 121px;
     color: #fff;
@@ -179,6 +244,16 @@ img {
     font-weight: 400;
     line-height: 45px;
     letter-spacing: 1px;
+
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    @include vp-767 {
+      margin-top: 70px;
+      font-size: 30px;
+    }
   }
 
   &_text {
@@ -191,6 +266,15 @@ img {
     line-height: 60px;
     width: 100%;
     max-width: 1602px;
+
+    @include vp-1023 {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+    }
   }
 }
 
@@ -223,6 +307,10 @@ img {
     line-height: 65px;
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 40px;
+    }
   }
 
   &_stages {
@@ -380,6 +468,15 @@ img {
   margin-top: 398px;
   padding: 0 60px;
 
+  @include vp-1023 {
+    margin-top: 150px;
+  }
+
+  @include vp-767 {
+    padding: 0 16px;
+    margin-top: 70px;
+  }
+
   &_title {
     color: #fff;
     text-align: center;
@@ -389,6 +486,15 @@ img {
     line-height: 65px;
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    @include vp-767 {
+      font-size: 30px;
+    }
   }
 
   &_description {
@@ -402,13 +508,27 @@ img {
     letter-spacing: -0.76px;
     width: 100%;
     max-width: 1318px;
+
+    @include vp-767 {
+      font-size: 25px;
+    }
   }
 
   &_orangeBlock {
     margin-top: 400px;
-    width: 1272px;
+    width: 100%;
+    max-width: 1272px;
     height: 138px;
     background: #f1521f;
+
+    @include vp-1023 {
+      margin-top: 150px;
+    }
+
+    @include vp-767 {
+      margin-top: 70px;
+      height: 70px;
+    }
   }
 }
 
@@ -421,6 +541,10 @@ img {
 
   @include vp-1439 {
     padding: 70px 0;
+  }
+
+  @include vp-1023 {
+    margin-top: 100px;
   }
 
   &_list {
@@ -607,6 +731,15 @@ img {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    @include vp-767 {
+      font-size: 30px;
+    }
   }
 
   &_description {
@@ -617,12 +750,26 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
+
+    @include vp-1023 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+    }
   }
 
   &_socialList {
     margin-top: 40px;
     display: flex;
     gap: 50px;
+
+    @include vp-1023 {
+      margin-top: 25px;
+      gap: 30px;
+    }
   }
 
   &_socialItem {
@@ -636,6 +783,16 @@ img {
     border-radius: 11px;
     border: 2px solid #f1521f;
     box-shadow: 0px 0px 10px 0px rgba(17, 255, 68, 0.4);
+
+    @include vp-1023 {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include vp-767 {
+      width: 55px;
+      height: 55px;
+    }
 
     &:hover,
     &:focus {
