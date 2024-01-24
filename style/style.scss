@@ -111,24 +111,17 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-bottom: 20px;
+  padding-left: 85px;
+  padding-right: 110px;
 
   @include vp-1439 {
-    padding-left: 60px;
-    padding-right: 60px;
   }
 
   @include vp-1023 {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @include vp-767 {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 80px;
   }
 
   &_top {
@@ -166,6 +159,7 @@ img {
     display: flex;
     flex-wrap: nowrap;
     gap: 12px;
+    margin-top: 10px;
   }
 
   &_menuItem {
@@ -179,19 +173,20 @@ img {
     letter-spacing: 1px;
     text-transform: uppercase;
     background: #1d1d1f;
-    padding: 2px 40px;
+    padding: 2px 38px;
     border-radius: 15px;
   }
 
   &_bottom {
     display: flex;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 100px;
   }
 
   &_left {
     width: 50%;
-    margin-top: 400px;
+    margin-top: 270px;
+    padding-right: 10px;
   }
 
   &_right {
@@ -271,13 +266,11 @@ img {
   align-items: center;
   text-transform: uppercase;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1779px;
   padding: 0 60px;
   padding-bottom: 129px;
 
   @include vp-767 {
-    padding: 0 16px;
-    padding-bottom: 120px;
   }
 
   &_title {
@@ -308,6 +301,7 @@ img {
     font-weight: 400;
     line-height: 60px;
     width: 100%;
+    max-width: 1407px;
 
     @include vp-1023 {
       font-size: 30px;
@@ -327,6 +321,7 @@ img {
   max-width: 1600px;
   width: 100%;
   padding: 0 60px;
+  margin-top: 140px;
 
   &_title {
     color: #fff;
@@ -341,12 +336,12 @@ img {
 
   &_text {
     padding: 88px 68px;
-    margin-top: 160px;
+    margin-top: 172px;
     border-radius: 10px;
     border: 1px solid #000;
     background: #43b446;
     width: 100%;
-    max-width: 1171px;
+    max-width: 1200px;
     color: #fff;
     text-align: center;
     font-size: 38px;
@@ -358,11 +353,12 @@ img {
 }
 
 .feature {
-  margin-top: 100px;
+  margin-top: 170px;
   width: 100%;
   background: url('../img/feature-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: 180px;
 
   &_container {
     width: 100%;
@@ -373,7 +369,7 @@ img {
   &_title {
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 65px; /* 150% */
@@ -386,15 +382,8 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 220px;
     list-style: none;
-  }
-
-  &_line-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 1500px;
-    margin-top: 200px;
   }
 
   &_item {
@@ -420,12 +409,21 @@ img {
 
     &-1 {
       align-self: flex-start;
-      margin-left: 150px;
+      margin-left: 180px;
     }
 
     &-2 {
-      margin-top: 150px;
+      margin-top: 400px;
+      margin-left: 236px;
     }
+  }
+
+  &_line-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1273px;
+    margin-top: 38px;
+    margin-left: 334px;
   }
 }
 
@@ -433,7 +431,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 517px;
   width: 100%;
 
   &_title {
@@ -482,8 +480,8 @@ img {
   align-items: flex-start;
   position: relative;
   width: 100%;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 377px;
+  padding-bottom: 143px;
 
   &_link {
     position: relative;
@@ -497,22 +495,46 @@ img {
     border-radius: 10px;
     border: 1px solid #fff;
     background: #43b446;
-    padding: 20px 60px;
+    padding: 20px 95px;
     margin-left: 184px;
 
     img {
       position: absolute;
       bottom: -160px;
-      right: -60px;
+      right: -15px;
     }
   }
 
   &_screen {
+    position: relative;
     align-self: flex-end;
+    margin-top: -20px;
+    right: -120px;
+  }
+
+  &_screenImg-1 {
+    position: relative;
+    z-index: 3;
+  }
+
+  &_screenImg-2 {
+    position: absolute;
+    z-index: 2;
+    top: 96px;
+    right: 120px;
+  }
+
+  &_screenImg-3 {
+    position: absolute;
+    z-index: 1;
+    top: 152px;
+    right: 94px;
+    width: 1300px;
+    height: 1315px;
   }
 
   &_description {
-    margin-top: 120px;
+    margin-top: 299px;
     color: #fff;
     text-align: center;
     font-size: 35px;
@@ -525,6 +547,7 @@ img {
 }
 
 .footer {
+  padding-top: 40px;
   padding-bottom: 80px;
   width: 100%;
   min-height: 312px;
@@ -544,7 +567,8 @@ img {
     justify-content: space-between;
     width: 100%;
     padding: 0 60px;
-    max-width: 1800px;
+    padding-left: 139px;
+    max-width: 1850px;
   }
 
   &_titleWrapper {
@@ -556,7 +580,7 @@ img {
   &_title {
     display: flex;
     align-items: baseline;
-    gap: 20px;
+    gap: 40px;
     color: #fff;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
