@@ -9,6 +9,9 @@ var typewriter = new Typewriter(app, {
 typewriter
   .pauseFor(1000)
   .typeString(
-    'wisp team is a group of independent developers, our goal is to provide a simple and affordable tool for automated market trading. Our native token, the White Wisp Token (WWT), is designed to be used in the trading system, allowing users to put it in staking or pay them directly. It is important to note that we have not reserved tokens for team members, nor do we have investors, advisors or other early holders. Our token will be fully hosted on a decentralized platform for efficient ecosystem management.'
+    'Ordi Snipe is an innovative analytics platform built on advanced artificial intelligence technology, specifically designed to identify potentially profitable assets early on in the bitcoin network. Our goal is to provide users with a powerful tool capable of analyzing large volumes of data and highlighting key trends and investment opportunities.'
+  )
+  .typeString(
+    '<br/> <p> The core functionality of Ordi Snipe is based on sophisticated algorithms and machine learning that allow the platform to process and interpret information with high accuracy. These algorithms are regularly updated to track changes in market dynamics and adapt to new trends in cryptocurrencies.</p>'
   )
   .start();

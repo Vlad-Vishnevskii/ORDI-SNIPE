@@ -172,7 +172,7 @@ img {
 }
 .header_title img {
   width: 115px;
-  height: auto;
+  height: 115px;
 }
 @media (max-width: 1439px) {
   .header_title img {
