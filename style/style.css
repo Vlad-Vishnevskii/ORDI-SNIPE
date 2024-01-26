@@ -260,7 +260,7 @@ img {
 }
 .header_left {
   width: 50%;
-  margin-top: 220px;
+  margin-top: 258px;
   padding-right: 10px;
 }
 @media (max-width: 1919px) {
@@ -284,7 +284,7 @@ img {
 }
 .header_right {
   width: 50%;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 @media (max-width: 1919px) {
   .header_right {
@@ -365,14 +365,19 @@ img {
   transform: scale(1.1);
 }
 .header_adress {
-  margin-top: 40px;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   font-variant: small-caps;
   letter-spacing: 0.6px;
+  word-break: break-all;
+}
+@media (max-width: 1150px) {
+  .header_adress {
+    font-size: 20px;
+  }
 }
 @media (max-width: 767px) {
   .header_adress {
@@ -551,10 +556,19 @@ img {
 .feature {
   margin-top: 170px;
   width: 100%;
-  background: url("../img/feature-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 180px;
+}
+@media (max-width: 2650px) {
+  .feature {
+    background: url("../img/feature-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+  }
+}
+@media (max-width: 2150px) {
+  .feature {
+    background-position-y: 180px;
+  }
 }
 @media (max-width: 1023px) {
   .feature {
@@ -864,6 +878,7 @@ img {
   position: relative;
   color: #000;
   text-align: center;
+  width: 420px;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
@@ -872,9 +887,10 @@ img {
   border-radius: 10px;
   border: 1px solid #fff;
   background: #43b446;
-  padding: 20px 95px;
+  padding: 20px 30px;
   margin-left: 184px;
   transition: 0.3s ease;
+  margin-top: 40px;
 }
 .coming_link:hover, .coming_link:focus {
   transform: scale(1.1);
@@ -901,6 +917,8 @@ img {
   .coming_link {
     font-size: 30px;
     padding: 10px 30px;
+    width: 90%;
+    max-width: 420px;
   }
 }
 .coming_screen {
@@ -974,6 +992,8 @@ img {
   line-height: 40px; /* 114.286% */
   text-transform: uppercase;
   padding: 0 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 1919px) {
   .coming_description {
@@ -1008,9 +1028,14 @@ img {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 60px;
-  padding-left: 139px;
-  max-width: 1850px;
+  padding: 0 139px;
+}
+@media (max-width: 2000px) {
+  .footer_container {
+    max-width: 1850px;
+    padding: 0 60px;
+    padding-left: 139px;
+  }
 }
 @media (max-width: 1600px) {
   .footer_container {
